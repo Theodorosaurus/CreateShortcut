@@ -50,7 +50,7 @@ If IsArray(arrEntryNamesLM) Then 'if our search finds an Array in the Local Mach
 	Shortcut.Save
 	PrintNStartup() 'calling my function from above
 Else
-	strKeyPathCU = "SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\brave.exe" 'if our search doesn't find an Array in the Local Machine location, then the browser was installed w/o Admin rights in the local user's profile paths
+	strKeyPathCU = "SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\MyInternetBrowser.exe" 'if our search doesn't find an Array in the Local Machine location, then the browser was installed w/o Admin rights in the local user's profile paths
 	objReg.GetStringValue HKEY_CURRENT_USER, strKeyPathCU, arrEntryNamesCU, strValueCU
 	Shortcut.TargetPath = strValueCU
 	Shortcut.WorkingDirectory = LEFT(strValueCU, (LEN(strValueCU)-9))
