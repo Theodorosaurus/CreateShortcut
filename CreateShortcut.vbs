@@ -36,6 +36,7 @@ Set Shortcut = fso.CreateShortcut(strCurDir & "\App.lnk") 'creating the shortuct
 Dim strComputer, objReg, strKeyPathLM, arrEntryNamesLM, arrEntryNamesLMi, strValueLM, strKeyPathCU, arrEntryNamesCU, strValueCU
 Const HKEY_LOCAL_MACHINE = &H80000002
 Const HKEY_CURRENT_USER  = &H80000001
+Const REG_SZ = 1
 strComputer = "."
 Set objReg = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv") 'pretty standard template for getting Registry's objects
 
