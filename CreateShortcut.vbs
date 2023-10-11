@@ -1,6 +1,7 @@
 Option Explicit
 
 Dim x, z, t, y, q, p
+
 Function PrintNstartup()
 	x = MsgBox("Will the Restaurant/Shop be using a Printer?                    ", 4 +vbSystemModal, "--kiosk-printing")
 		If x = 6 Then
