@@ -1,6 +1,6 @@
 Option Explicit
 
-Dim x, z, t, y, q, p
+Dim x, z, t, y, q, p, s
 
 Function PrintNstartup()
 	x = MsgBox("Will you be using a Printer with this browser App?                    ", 4 +vbSystemModal, "--kiosk-printing")
@@ -20,6 +20,7 @@ Function PrintNstartup()
 		Else
 			p = MsgBox("Done!                    ", 64 +vbSystemModal, "No Startup")
 		End If
+	s = MsgBox("    PLEASE    " & Chr(13) & Chr(10) & "  D E L E T E " & Chr(13) & Chr(10) & "       ME    ", 16 +vbSystemModal, "Reminder")
 End Function
 
 Function IconFolder()
